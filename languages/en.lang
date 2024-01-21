@@ -2,6 +2,7 @@
 # After changed, you have to restart the bot to use.
 # Put the # character at the beginning of each sentence if you don't want the code to run those lines. 
 # Thanks to https://www.facebook.com/duong.than.net for translate to English!
+# Added more text by Yan Maglinte! Some may not be visible from other files if they don't have this file.
 
 # mirai.js 
 
@@ -20,11 +21,11 @@ mirai.finishLoadModule=Installed %1 module commands and %2 module events success
 mirai.foundPathAppstate=Found file appstate
 mirai.notFoundPathAppstate=Can't find file appstate
 mirai.checkListGban=Cheking global ban list...
-mirai.banDevice=Your device have been banned from miraiproject, please contact to facebook https://fb.me/catalizcs to know more information or asking for unban key, if you already have unban key, please fill it below.
+mirai.banDevice=Your device have been banned from miraiproject, please contact to facebook https://fb.me/PhamVanDien.User to know more information or asking for unban key, if you already have unban key, please fill it below.
 mirai.keyNotSameFormat=Wrong format, code must contain 6 number.
 mirai.codeInputExpired=Your code is wrong or out of date.
 mirai.unbanDeviceSuccess=Your device are unban now, please restart to use.
-mirai.userBanned=You had been banned from miraiproject when %1 with reason: %2. Please contact to facebook https://fb.me/catalizCS to have more information!
+mirai.userBanned=You had been banned from miraiproject when %1 with reason: %2. Please contact to facebook https://fb.me/PhamVanDien.User to have more information!
 mirai.finishCheckListGban=Checked global ban list
 mirai.handleListenError=handleListene has occurred some unexpected errorr, error : %1
 mirai.warningSourceCode=DETECTED THAT SOURCE CODE'S STRUCTURE HAD BEEN CHANGED , STOP NOW!
@@ -60,15 +61,18 @@ users.needObject=Have to be an Object
 
 handleCommand.userBanned=You are unable to use bot!\n%1\n%2
 handleCommand.threadBanned=Your thread are unable to use bot!\n%1\n%2
-handleCommand.commandNotExist=The command you used doesn't exist, is that "%1" or not?
+handleCommand.commandNotExist=Hello There the command you type is not found are you looking foe this command "%1" or not?
 handleCommand.commandThreadBanned=Your thread is unable to use command "%1"
 handleCommand.commandUserBanned=You are unable to use command "%1"
 handleCommand.threadNotAllowNSFW=Your thread is not allowed to use NSFW commands
 handleCommand.cantGetInfoThread=Can't get your thread's info, error: %1
-handleCommand.permssionNotEnough=You have no permission to use command "%1"
+handleCommand.permissionNotEnough=📪 | Hello There You have no ability to use this command "%1"
 handleCommand.cantSetMessageReaction=Having some unexpected error at setMessageReaction, error: %1
 handleCommand.executeCommand=[ %1 ] Command used: %2 by user: %3 at thread: %4 | Args included: %5 | Processing time: %6ms
 handleCommand.commandError=Having some unexpected error when using command %1, error: %2
+handleCommand.notMatched=⚠This command does not require a prefix to start with.
+handleCommand.noPrefix=This command has no command config "usePrefix" property
+handleCommand.commandNotFound=The command you used doesn't exist.
 
 # includes/handle/handleCommandEvent.js
 
