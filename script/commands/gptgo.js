@@ -20,13 +20,14 @@ module.exports.run = async function ({ api, event, args }) {
     const content = encodeURIComponent(body);
 
     try {
-      const res = await axios.get(`https://cyni-gpt-api.onrender.com/ask?q=${content}`);
-      const respond = res.data.response;
+      const res = await axios.get(`https://ai-chat-gpt-4-lite.onrender.com/api/hercai?question=${content}`);
+      const respond = res.data.reply;
+      const requestNumber = res.data.requestNumber;
 
       if (res.data.error) {
         api.sendMessage(`Error: ${res.data.error}`, threadID, messageID);
       } else {
-        api.sendMessage(respond, threadID, messageID);
+        api.sendMessage(`${respond}\n\n📝 Request count: ${requestNumber}`, threadID, messageID);
       }
     } catch (error) {
       console.error(error);
